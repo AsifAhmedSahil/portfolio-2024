@@ -87,25 +87,30 @@ export const AboutSection = () => {
       />
 
       <div className="mt-20 flex flex-col gap-8">
-        <Card className="h-[320px]">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-5 ">
+        <Card className="h-[320px] md:col-span-2">
           <CardHeader title="My Reads" description="Explore the books shaping my perspective."/>
           
-            <div className="w-40 mx-auto mt-8">
+            <div className="w-40 mx-auto mt-4 md:mt-0">
 
             <Image src={BookImage} alt="bookimg"/>
             </div>
           
         </Card>
-        <Card className="h-[320px] p-0">
+        <Card className="h-[320px]  md:col-span-3">
 
-          <CardHeader title="My Toolbox" className="px-6 pt-6" description="Explore the technologies and tools i use to create digital presence"/>
+          <CardHeader title="My Toolbox" className="" description="Explore the technologies and tools i use to create digital presence"/>
           
 
-          <ToolboxItem items={MyToolbox} className="mt-6"/>
+          <ToolboxItem items={MyToolbox} className=""/>
           <ToolboxItem items={MyToolbox} className="mt-6 " itemWrapperClassname="-translate-x-1/2"/>
         </Card>
+        </div>
 
-        <Card className="h-[320px] p-0 flex flex-col">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+
+            
+        <Card className="h-[320px] p-0 flex flex-col md:col-span-3">
 
         <CardHeader title="Beyond the code" description="Explore the interestes and hobbies beyond the digital realm" className="px-6 py-6"/>
           
@@ -125,16 +130,21 @@ export const AboutSection = () => {
           </div>
         </Card>
 
-        <Card>
-        <CardHeader title="My Reads" description="Explore the books shaping my perspective."/>
-        <div className="w-40 mx-auto mt-8">
+        <Card className="h-[320px] md:col-span-2">
+          <CardHeader title="My Reads" description="Explore the books shaping my perspective."/>
+          
+            <div className="w-40 mx-auto mt-4 md:mt-0">
 
-<Image src={BookImage} alt="bookimg"/>
-</div>
+            <Image src={BookImage} alt="bookimg"/>
+            </div>
+          
         </Card>
+
+        </div>
 
       </div>
     </div>
     </div>
+    
   );
 };
