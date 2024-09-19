@@ -10,6 +10,9 @@ import HTMLIcon from "@/assets/icons/html5.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import TypeIcon from "@/assets/icons/type.svg";
+import MongoIcon from "@/assets/icons/mongo.svg";
+
 
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItem } from "@/components/ToolboxItem";
@@ -20,6 +23,10 @@ const MyToolbox = [
   {
     title: "javaScript",
     iconType: JacascriptIcon,
+  },
+  {
+    title: "javaScript",
+    iconType: TypeIcon,
   },
   {
     title: "HTML5",
@@ -37,6 +44,11 @@ const MyToolbox = [
     title: "Github",
     iconType: GithubIcon,
   },
+  {
+    title: "MongoDB",
+    iconType: MongoIcon,
+  }
+  
 ];
 
 const hobbies = [
@@ -76,7 +88,26 @@ const hobbies = [
     left: "5%",
     top: "65%",
   },
+  {
+    title: "Traveling",
+    emoji: "✈️",
+    left: "80%",
+    top: "10%",
+  },
+  {
+    title: "Cycling",
+    emoji: "🚴‍♂️",
+    left: "30%",
+    top: "70%",
+  },
+  {
+    title: "Music",
+    emoji: "🎶",
+    left: "60%",
+    top: "80%",
+  },
 ];
+
 
 export const AboutSection = () => {
   const constrainRef = useRef(null)

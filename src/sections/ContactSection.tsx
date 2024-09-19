@@ -22,7 +22,7 @@ export const ContactSection = () => {
         <SectionHeader
         eyebrow="Contact Me"
         title="Let's Get in Touch"
-        description="I'd love to hear from you. Feel free to reach out!"
+        description=" If you have any questions or inquiries, feel free to reach out! I’m always eager to connect and explore new opportunities that align with my skills and passions."
       />
       <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-8">
         {/* Form Section */}
@@ -61,9 +61,9 @@ export const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-emerald-500 text-white py-2 rounded hover:bg-emerald-600 transition"
+              className="w-full rounded-full bg-gradient-to-r from-emerald-700 to-sky-600 text-white py-2  hover:bg-emerald-600 transition animate-pulse"
             >
-              Lets get in touch
+              Let's get in touch
             </button>
           </form>
         </div>
