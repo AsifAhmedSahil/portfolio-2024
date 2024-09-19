@@ -9,7 +9,7 @@ export const ContactSection = () => {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., sending to an API)
+    
     console.log("Form submitted", { name, email, message });
     // Reset form fields
     setName("");
