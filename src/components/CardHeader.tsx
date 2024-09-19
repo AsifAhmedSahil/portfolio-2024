@@ -9,7 +9,7 @@ export const CardHeader = ({title,description,className}:{title:string,descripti
             <StarIcon className="size-9 text-emerald-300 "/>
             <h3 className="text-3xl font-serif">{title}</h3>
             </div>
-            <p className="text-sm text-white/60 mt-2">{description}</p>
+            <p className="text-sm lg:text-base max-w-xs text-white/60 mt-2">{description}</p>
             </div>
     )
 }
