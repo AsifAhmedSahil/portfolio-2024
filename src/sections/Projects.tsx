@@ -118,13 +118,14 @@ export const ProjectsSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative border-4 border-black rounded-xl">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none border-4 border-black rounded-xl"
-                  />
-                </div>
+                <div className="relative border-2 border-black rounded-xl sm:border-0">
+  <Image
+    src={project.image}
+    alt={project.title}
+    className="mt-6 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl"
+  />
+</div>
+
               </div>
             </Card>
           ))}
