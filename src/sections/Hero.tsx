@@ -1,29 +1,49 @@
 import memojiImage from "@/assets/images/memoji-computer.png";
 import grainImage from "@/assets/images/grain.jpg";
 import Arrowdown from "@/assets/icons/arrow-down.svg";
+import StarIcon from "@/assets/icons/star.svg";
 import Image from "next/image";
+import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 -z-30 opacity-5 " style={{
         backgroundImage: `url(${grainImage.src})`
-      }}>
+      }}>  </div>
 
-        <div className="absolute inset-0 size-[620px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/90">
-
-        </div>
-        <div className="absolute inset-0 size-[820px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/90">
+        <div className="absolute inset-0 size-[620px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5">
 
         </div>
-        <div className="absolute inset-0 size-[1020px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/90">
+        <div className="absolute inset-0 size-[820px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5">
 
         </div>
-        <div className="absolute inset-0 size-[1220px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/90">
+        <div className="absolute inset-0 size-[1020px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5">
+
+        </div>
+        <div className="absolute inset-0 size-[1220px] border-2 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5">
 
         </div>
 
-      </div>
+        {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+         <div className="border border-red-400 size-[800px] ">
+         <div className="border border-red-500 inline-flex ">
+         <StarIcon className="size-28 text-emerald-300"/>
+         </div>
+         </div>
+        </div> */}
+
+        <HeroOrbit size={800} rotation={-72}>
+        <StarIcon className="size-28 text-emerald-300"/>
+        </HeroOrbit>
+        <HeroOrbit size={550} rotation={20}>
+        <StarIcon className="size-12 text-emerald-300"/>
+        </HeroOrbit>
+        <HeroOrbit size={590} rotation={98}>
+        <StarIcon className="size-8 text-emerald-300"/>
+        </HeroOrbit>
+
+    
       <div className="container ">
         <div className="flex items-center flex-col">
           <Image src={memojiImage} alt="pc" className="size-[100px]" />
