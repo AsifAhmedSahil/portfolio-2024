@@ -40,27 +40,39 @@ const MyToolbox = [
 const hobbies = [
   {
     title: "Painting",
-    emoji: "🎨"
+    emoji: "🎨",
+    left:"5%",
+    top:"5%",
   },
   {
     title: "Gardening",
-    emoji: "🌱"
+    emoji: "🌱",
+    left:"50%",
+    top:"5%",
   },
   {
     title: "Photography",
-    emoji: "📸"
+    emoji: "📸",
+    left:"10%",
+    top:"35%",
   },
   {
     title: "Cooking",
-    emoji: "🍳"
+    emoji: "🍳",
+    left:"35%",
+    top:"40%",
   },
   {
     title: "Reading",
-    emoji: "📚"
+    emoji: "📚",
+    left:"70%",
+    top:"45%",
   },
   {
     title: "Hiking",
-    emoji: "🥾"
+    emoji: "🥾",
+    left:"5%",
+    top:"65%",
   }
 ];
 
@@ -93,15 +105,18 @@ export const AboutSection = () => {
           <ToolboxItem items={MyToolbox} className="mt-6 " itemWrapperClassname="-translate-x-1/2"/>
         </Card>
 
-        <Card>
+        <Card className="h-[320px] p-0 flex flex-col">
 
-        <CardHeader title="Beyond the code" description="Explore the interestes and hobbies beyond the digital realm"/>
+        <CardHeader title="Beyond the code" description="Explore the interestes and hobbies beyond the digital realm" className="px-6 py-6"/>
           
-          <div>
+          <div className="relative flex-1">
             {
               hobbies.map((hobby) =>(
-                <div key={hobby.title}>
-                  <span>{hobby.title}</span>
+                <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute" style={{
+                    left:hobby.left,
+                    top:hobby.top
+                }}>
+                  <span className="font-medium text-gray-950">{hobby.title}</span>
                   <span>{hobby.emoji}</span>
 
                 </div>
@@ -112,7 +127,10 @@ export const AboutSection = () => {
 
         <Card>
         <CardHeader title="My Reads" description="Explore the books shaping my perspective."/>
-          
+        <div className="w-40 mx-auto mt-8">
+
+<Image src={BookImage} alt="bookimg"/>
+</div>
         </Card>
 
       </div>
