@@ -23,7 +23,7 @@ const portfolioProjects = [
     image: fortune,
   },
   {
-    company: "CheckNalert",
+    company: "Check-N-alert",
     year: "2024",
     title: "Light Saas Landing Page",
     results: [
