@@ -21,7 +21,7 @@ export const ContactSection = () => {
     <div id="contact" className="py-32 bg-gray-900 text-white">
         <SectionHeader
         eyebrow="Contact Me"
-        title="Let's Get in Touch"
+        title="Let&apos;s Get in Touch"
         description=" If you have any questions or inquiries, feel free to reach out! I’m always eager to connect and explore new opportunities that align with my skills and passions."
       />
       <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-8">
