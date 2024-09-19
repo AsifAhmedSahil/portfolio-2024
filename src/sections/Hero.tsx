@@ -6,7 +6,7 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
-import Link from "next/link";
+
 
 export const HeroSection = () => {
   return (

@@ -3,8 +3,8 @@ import { twMerge } from "tailwind-merge"
 
 export const CardHeader = ({title,description,className}:{title:string,description:string,className?:string}) =>{
     return (
-        <div className={twMerge("flex flex-col lg:mt-4 md:py-2 md:px-4",className)}>
-            <div className="inline-flex items-center gap-2">
+        <div className={twMerge("flex flex-col mt-6 lg:mt-4 md:py-2 md:px-4 ",className)}>
+            <div className="inline-flex items-center gap-2 ">
 
             <StarIcon className="size-9 text-emerald-300 "/>
             <h3 className="text-3xl font-serif">{title}</h3>
