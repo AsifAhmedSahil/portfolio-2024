@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import fortune from "@/assets/images/fortune.png";
+import checkNalart from "@/assets/images/checknalart.png";
+import devpath from "@/assets/images/coursewebsite.png";
 import grainImages from "@/assets/images/grain.jpg";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -9,40 +9,44 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Full-Stack Project",
+    year: "2024",
+    title: "Fortune Sport's Arena",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Sports Facilities Booking Platform" },
+      { title: "With Admin & User Dashboard" },
+      { title: "Intregrate AmaarPay Payment Gateway" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://fortune-sports.vercel.app",
+    github:
+      "https://github.com/AsifAhmedSahil/Fortune-Sports---Sports-Facility-Booking-Platform---React-Tailwind-Magic-UI--Typescript",
+    image: fortune,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
+    company: "CheckNalert",
+    year: "2024",
     title: "Light Saas Landing Page",
     results: [
-      { title: "Boosted sales by 20%" },
+      { title: "Start Monitoring You Website" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://checknalert.vercel.app",
+    github: "https://github.com/AsifAhmedSahil/Modern-and-fully-responsive-UI-UX-website-with-Next.js-14-and-Tailwind",
+    image: checkNalart,
   },
   {
-    company: "Quantum Dynamics",
+    company: "DevPath-Academy",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Start Your Programming",
     results: [
-      { title: "Enhanced user experience by 40%" },
+      { title: "Using Next.Js & Accertinity UI" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://devpath-academy-next-js-aceternity-ui-with-typescript.vercel.app",
+    github: "https://github.com/AsifAhmedSahil/Learn-NextJS-with-Aceternity-UI-library-by-building-a-project-with-typescript",
+    image: devpath,
   },
 ];
 
@@ -62,16 +66,14 @@ export const ProjectsSection = () => {
           See how i transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {portfolioProjects.map((project,index) => (
+          {portfolioProjects.map((project, index) => (
             <Card
               key={project.title}
               className=" px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16 "
               style={{
-                top: `calc(64px + ${index * 40}px)`
+                top: `calc(64px + ${index * 40}px)`,
               }}
             >
-              
-
               <div className="lg:grid lg:grid-cols-2 gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 text-transparent bg-clip-text">
@@ -97,31 +99,31 @@ export const ProjectsSection = () => {
                   </ul>
 
                   <div className="flex flex-col md:flex-row lg:flow-row lg:gap-3 md:gap-3">
-                  <div>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8 md:w-auto px-6">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
-                  </div>
+                    <div>
+                      <a href={project.link} target="_blank">
+                        <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8 md:w-auto px-6">
+                          <span>Visit Live Site</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </button>
+                      </a>
+                    </div>
 
-                  <div>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-4 lg:mt-8 md:mt-8 md:w-auto px-6">
-                      <span>Github Repo</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
-                  </div>
+                    <div>
+                      <a href={project.github} target="_blank">
+                        <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-4 lg:mt-8 md:mt-8 md:w-auto px-6">
+                          <span>Github Repo</span>
+                          <ArrowUpRightIcon className="size-4" />
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div className="relative">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="mt-8 -mb-4 md:-mb-0 lg:mt-0  lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                />
+                <div className="relative border-4 border-black rounded-xl">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none border-4 border-black rounded-xl"
+                  />
                 </div>
               </div>
             </Card>
