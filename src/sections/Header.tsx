@@ -26,7 +26,7 @@ export const Header = () => {
         </Link>
         <Link
           href={"/#contact"}
-          className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold bg-white  text-black hover:bg-white/70 hover:text-gray-900"
+          className="px-4 py-1.5 rounded-full  text-sm font-semibold bg-white text-gray-900  hover:bg-white/70 hover:text-gray-900"
         >
           Contact
         </Link>
