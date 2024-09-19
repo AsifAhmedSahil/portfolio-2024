@@ -63,7 +63,7 @@ export const ContactSection = () => {
               type="submit"
               className="w-full rounded-full bg-gradient-to-r from-emerald-700 to-sky-600 text-white py-2  hover:bg-emerald-600 transition animate-pulse"
             >
-              Let's get in touch
+              Let&apos;s get in touch
             </button>
           </form>
         </div>
