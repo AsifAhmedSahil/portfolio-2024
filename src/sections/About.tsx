@@ -1,4 +1,4 @@
-import { Card } from "@/components/card";
+import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import StarIcon from "@/assets/icons/star.svg";
 import BookImage from "@/assets/images/book-cover.png";
@@ -77,7 +77,7 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className=" py-20 lg:py-28">
+    <div id="about" className=" py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"

@@ -25,6 +25,8 @@ const config: Config = {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)'
       }
+      
+      
     },
   },
   plugins: [],

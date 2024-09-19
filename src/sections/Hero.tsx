@@ -8,7 +8,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div id="hero" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
 
       
@@ -67,7 +67,9 @@ export const HeroSection = () => {
         <div className="flex items-center flex-col">
           <Image src={memojiImage} alt="pc" className="size-[100px]" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center rounded-lg gap-4">
-            <div className="size-2.5 bg-green-500 rounded-full animate-pulse"></div>
+            <div className="size-2.5 bg-green-500 rounded-full relative">
+              <div className="absolute bg-green-500 rounded-full animate-ping inset-0"></div>
+            </div>
             <div className="text-sm font-medium uppercase">
               lets build something together
             </div>
