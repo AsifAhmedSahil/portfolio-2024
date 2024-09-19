@@ -1,3 +1,4 @@
+import ScrollUpButton from "@/components/ScrollUpButton ";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/ContactSection";
 import { Header } from "@/sections/Header";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div>
       <Header/>
+      <ScrollUpButton/>
       <HeroSection/>
       <AboutSection/>
       <TapeSection/>
