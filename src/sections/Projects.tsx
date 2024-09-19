@@ -5,6 +5,7 @@ import grainImages from "@/assets/images/grain.jpg";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
+import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
@@ -61,17 +62,15 @@ export const ProjectsSection = () => {
           See how i transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {portfolioProjects.map((project) => (
-            <div
+          {portfolioProjects.map((project,index) => (
+            <Card
               key={project.title}
-              className="bg-gray-800  rounded-3xl relative overflow-hidden z-0 after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none "
+              className=" px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16 "
+              style={{
+                top: `calc(64px + ${index * 40}px)`
+              }}
             >
-              <div
-                className="absolute inset-0 -z-10 opacity-5 "
-                style={{
-                  backgroundImage: `url(${grainImages.src})`,
-                }}
-              ></div>
+              
 
               <div className="lg:grid lg:grid-cols-2 gap-16">
                 <div className="lg:pb-16">
@@ -125,7 +124,7 @@ export const ProjectsSection = () => {
                 />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
