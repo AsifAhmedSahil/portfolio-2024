@@ -6,7 +6,7 @@ export const Header = () => {
         <a href="" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300">Home</a>
         <a href="" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300">About</a>
         <a href="" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300">Project</a>
-        <a href="" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold bg-white  text-black hover:bg-white/70 hover:text-gray-900">Contact</a>
+        <a href="" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold bg-black  text-white hover:bg-white/70 hover:text-gray-900">Contact</a>
       </nav>
       
     </div>
