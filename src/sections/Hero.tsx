@@ -81,7 +81,7 @@ export const HeroSection = () => {
             Building Exceptional User Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in transforming designs into functional,
+            Hi! I am Asif. I specialize in transforming designs into functional,
             high-performing web applications. Lets discuss your next project
           </p>
         </div>
