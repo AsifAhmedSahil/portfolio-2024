@@ -102,7 +102,7 @@ export const HeroSection = () => {
           >
           </a> */}
           <a
-  href="https://drive.google.com/uc?export=download&id=1gy8obe6nFzA6OMF2-fWyJrmg-NSj_5fF"
+  href="https://drive.google.com/file/d/1iY71Xnk1xUkOrJywd6i-wkvOVJYeOeHo/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl relative z-10"
