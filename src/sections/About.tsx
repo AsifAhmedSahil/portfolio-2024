@@ -109,7 +109,7 @@ const hobbies = [
 ];
 
 
-export const AboutSection = () => {
+export const AboutSection = ({data}:{data:any}) => {
   const constrainRef = useRef(null)
   return (
     <div id="about" className=" py-20 lg:py-28">
@@ -117,7 +117,7 @@ export const AboutSection = () => {
         <SectionHeader
           eyebrow="About Me"
           title="A Glimpse into my world"
-          description="Learn more about who I am, what I do, and what inspires me"
+          description={data.aboutme}
         />
 
         <div className="mt-20 flex flex-col gap-8">

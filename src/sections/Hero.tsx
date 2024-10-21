@@ -8,7 +8,7 @@ import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
 
 
-export const HeroSection = () => {
+export const HeroSection = ({data}:{data:any}) => {
   return (
     <div
       id="hero"
@@ -78,11 +78,10 @@ export const HeroSection = () => {
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experiences
+            {data.heading}
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Hi! I am Asif. I specialize in transforming designs into functional,
-            high-performing web applications. Lets discuss your next project
+            {data.summary}
           </p>
         </div>
 
@@ -102,7 +101,7 @@ export const HeroSection = () => {
           >
           </a> */}
           <a
-  href="https://drive.google.com/file/d/1iY71Xnk1xUkOrJywd6i-wkvOVJYeOeHo/view?usp=sharing"
+  href={data.resumelink}
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl relative z-10"
