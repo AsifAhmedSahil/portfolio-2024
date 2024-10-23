@@ -23,8 +23,10 @@ export default async function Home() {
   const experienceSectionData = await extractAllDatas("experience");
   const educationSectionData = await extractAllDatas("education");
   const projectSectionData = await extractAllDatas("project");
-  console.log(experienceSectionData,"************")
-  return (
+  console.log(aboutSectionData,"************")
+  
+ 
+    return (
     <div>
       <Header/>
       <ScrollUpButton/>
