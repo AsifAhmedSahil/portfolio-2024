@@ -23,15 +23,21 @@ export default async function Home() {
   // const experienceSectionData = await extractAllDatas("experience");
   // const educationSectionData = await extractAllDatas("education");
   // const projectSectionData = await extractAllDatas("project");
-  console.log(aboutSectionData,"************")
+  console.log(homeSectionData,"************")
+
+  
   
  
     return (
     <div>
       <Header/>
       <ScrollUpButton/>
-      <HeroSection data={homeSectionData[0]}/>
-      <AboutSection data={aboutSectionData[0]}/>
+      <HeroSection data={
+          homeSectionData && homeSectionData.length ? homeSectionData[0] : []
+        }/>
+      <AboutSection data={
+          aboutSectionData && aboutSectionData.length ? aboutSectionData[0] : []
+        }/>
       <TapeSection/>
       <ProjectsSection/>
       <ContactSection/>

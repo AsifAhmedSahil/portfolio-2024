@@ -150,7 +150,7 @@ export default function AdminView() {
 
   useEffect(() => {
     extractAllDatas();
-  }, [currentSelectedTab]);
+  }, [extractAllDatas]);
 
   function resetFormDatas() {
     setHomeViewFormData(initialHomeFormData);
