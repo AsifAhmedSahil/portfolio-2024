@@ -6,7 +6,7 @@ import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 
-async function extractAllDatas(currentSection: string) {
+async function extractAllDatas(currentSection:string) {
   try {
     const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
       method: "GET",
@@ -14,17 +14,17 @@ async function extractAllDatas(currentSection: string) {
     });
 
     if (!res.ok) {
-      throw new Error(`Failed to fetch ${currentSection}: ${res.statusText}`);
+      throw new Error(`Error fetching ${currentSection}: ${res.statusText}`);
     }
 
     const data = await res.json();
-    
     return data && data.data;
   } catch (error) {
-    console.error(`Error fetching ${currentSection}:`, error);
-    return null; // or handle it in a way that makes sense for your app
+    console.error(error);
+    return null; // Handle as appropriate for your app
   }
 }
+
 
 export default async function Home() {
   const homeSectionData = await extractAllDatas("home");
