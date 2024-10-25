@@ -20,9 +20,9 @@ async function extractAllDatas(currentSection:string) {
 export default async function Home() {
   const homeSectionData = await extractAllDatas("home");
   const aboutSectionData = await extractAllDatas("about");
-  const experienceSectionData = await extractAllDatas("experience");
-  const educationSectionData = await extractAllDatas("education");
-  const projectSectionData = await extractAllDatas("project");
+  // const experienceSectionData = await extractAllDatas("experience");
+  // const educationSectionData = await extractAllDatas("education");
+  // const projectSectionData = await extractAllDatas("project");
   console.log(aboutSectionData,"************")
   
  

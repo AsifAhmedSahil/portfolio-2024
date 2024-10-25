@@ -33,7 +33,10 @@ export default function AdminHomeView({ formData, setFormData, handleSaveData })
           formData={formData}
           setFormData={setFormData}
         />
-        <button onClick={()=>handleSaveData('home')} className="mt-[10px] text-black border border-green-600 p-4 font-bold text-[16px]">
+        <button
+          onClick={() => handleSaveData('home')}
+          className="mt-[10px] text-black border border-green-600 p-4 font-bold text-[16px]"
+        >
           Add Info
         </button>
       </div>
