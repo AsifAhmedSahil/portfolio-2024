@@ -6,6 +6,7 @@ const ProjectSchema = new mongoose.Schema(
     website: String,
     technologies: String,
     github: String,
+    image: String,
   },
   { timestamps: true }
 );

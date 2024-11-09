@@ -1,4 +1,7 @@
 import fortune from "@/assets/images/fortune.png";
+import crave from "@/assets/images/crave.png";
+import ubereats from "@/assets/images/ubereats.png";
+import web3 from "@/assets/images/web3.png";
 import checkNalart from "@/assets/images/checknalart.png";
 import devpath from "@/assets/images/coursewebsite.png";
 import grainImages from "@/assets/images/grain.jpg";
@@ -47,6 +50,48 @@ const portfolioProjects = [
     link: "https://devpath-academy-next-js-aceternity-ui-with-typescript.vercel.app",
     github: "https://github.com/AsifAhmedSahil/Learn-NextJS-with-Aceternity-UI-library-by-building-a-project-with-typescript",
     image: devpath,
+  },
+  {
+    company: "Full-Stack Project",
+    year: "2024",
+    title: "Crave - Recipe Sharing Community",
+    results: [
+      { title: "Recipe Sharing Community Bangladesh" },
+      { title: "With Admin & User Dashboard" },
+      { title: "Intregrate AmaarPay Payment Gateway for premium subscription" },
+    ],
+    link: "https://crave-client-assignment-6.vercel.app",
+    github:
+      "https://github.com/AsifAhmedSahil/Crave---Recipe-Sharing-Community---FrontEnd-with-Next.js",
+    image: crave,
+  },
+  {
+    company: "Uber Eats Design",
+    year: "2024",
+    title: "Uber Eats Clone ",
+    results: [
+      { title: "uber eats pixel perfect design" },
+      { title: "using tailwind css properly" },
+      { title: "Intregrate AmaarPay Payment Gateway for premium subscription" },
+    ],
+    link: "https://uber-eats-react-by-sahil.vercel.app",
+    github:
+      "https://github.com/AsifAhmedSahil/uber-eats-react",
+    image: ubereats,
+  },
+  {
+    company: "Web 3.0 services ",
+    year: "2023",
+    title: "LMS for web 3 courses ",
+    results: [
+      { title: "LMS service for web 3.0 courses " },
+      { title: "using tailwind css properly" },
+      { title: "Intregrate AmaarPay Payment Gateway for premium subscription" },
+    ],
+    link: "https://web3-services.web.app",
+    github:
+      "https://github.com/AsifAhmedSahil/web3.0-services-client",
+    image: web3,
   },
 ];
 

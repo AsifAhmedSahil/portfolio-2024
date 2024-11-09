@@ -8,7 +8,9 @@ export async function POST(req) {
   try {
     await connectToDB();
     const extractData = await req.json();
+    console.log(extractData)
     const saveData = await Project.create(extractData);
+    console.log(saveData)
 
     if (saveData) {
       return NextResponse.json({

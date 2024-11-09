@@ -24,6 +24,10 @@ export const ContactSection = () => {
         title="Let&apos;s Get in Touch"
         description=" If you have any questions or inquiries, feel free to reach out! I’m always eager to connect and explore new opportunities that align with my skills and passions."
       />
+     <div className="text-center text-white/60 mt-10">
+      <h2>Phone: +8801577179858</h2>
+      <h2>Email: asifahmedsahil.007@gmail.com</h2>
+     </div>
       <div className="container mx-auto flex flex-col md:flex-row gap-8 mt-8">
         {/* Form Section */}
         <div className="flex-1 bg-gray-800 rounded-lg shadow-lg p-8">

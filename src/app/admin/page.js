@@ -43,6 +43,7 @@ const initialProjectFormData = {
   website: "",
   technologies: "",
   github: "",
+  image:""
 };
 
 const initialLoginFormData = {
@@ -94,6 +95,8 @@ export default function AdminView() {
       experience: experienceViewFormData,
       project: projectViewFormData,
     };
+
+    console.log("Data being sent to save:", dataMap[currentSelectedTab]);
 
     const response = update
       ? await updateData(currentSelectedTab, dataMap[currentSelectedTab])
@@ -218,7 +221,7 @@ export default function AdminView() {
 
   return (
     <div className="border-b border-gray-200">
-      <nav className="-mb-0.5 flex justify-center space-x-6" role="tablist">
+      <nav className="-mb-0.5 lg:flex justify-center space-x-6 sm:grid grid-cols-3  sm:space-x-1" role="tablist">
         {menuItems.map((item) => (
           <button
             key={item.id}
