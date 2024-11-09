@@ -8,8 +8,8 @@ import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 
 async function extractAllDatas(currentSection:string) {
-  // const res = await fetch(`https://portfolio-2024-e6lw.vercel.app/api/${currentSection}/get`, {
-  const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
+  const res = await fetch(`https://portfolio-2024-e6lw.vercel.app/api/${currentSection}/get`, {
+  // const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
     method: "GET",
     cache: "no-store",
   });
