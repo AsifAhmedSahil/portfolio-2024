@@ -1,13 +1,15 @@
 import ScrollUpButton from "@/components/ScrollUpButton ";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/ContactSection";
+import Education from "@/sections/Education";
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 
 async function extractAllDatas(currentSection:string) {
-  const res = await fetch(`https://portfolio-2024-e6lw.vercel.app/api/${currentSection}/get`, {
+  // const res = await fetch(`https://portfolio-2024-e6lw.vercel.app/api/${currentSection}/get`, {
+  const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
     method: "GET",
     cache: "no-store",
   });
@@ -20,10 +22,11 @@ async function extractAllDatas(currentSection:string) {
 export default async function Home() {
   const homeSectionData = await extractAllDatas("home");
   const aboutSectionData = await extractAllDatas("about");
+  const educationSectionData = await extractAllDatas("education");
   // const experienceSectionData = await extractAllDatas("experience");
   // const educationSectionData = await extractAllDatas("education");
   // const projectSectionData = await extractAllDatas("project");
-  console.log(homeSectionData,"************")
+  console.log(educationSectionData,"************")
 
   
   
@@ -40,6 +43,7 @@ export default async function Home() {
         }/>
       <TapeSection/>
       <ProjectsSection/>
+      <Education events={educationSectionData }/>
       <ContactSection/>
     </div>
   );
